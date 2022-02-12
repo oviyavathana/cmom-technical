@@ -1,13 +1,66 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 30px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.data-page h1 {
+	color: #61DAFB;
+	margin: 20px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+}
+.data-image {
+	height: 34px;
+}
+.data-table {
+	color: #fff;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	padding-top: 10px;
+}
+.table {
+	color: #fff;
+	background-color: #011D2F;
+	padding: 10px;
+	border-radius: 10px;
+}
+.table>thead {
+	border-bottom: none;
+}
+.modal-body>ol {
+	color: #000000;
+}
+.close-btn{
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.modal-header , .modal-body {
+	background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+}
+ol {
+	color: #fff;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	margin-bottom: 0;
+	cursor: pointer;
+	padding: 20px;
+}
+tr {
+	padding: 20px;
+	cursor: pointer;
+}
+td>ol {
+	padding-left: 0;
+}
+th {
+	color: #FAF8EF;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	cursor: pointer;
+}
+.price {
+	text-align: center;
 }
