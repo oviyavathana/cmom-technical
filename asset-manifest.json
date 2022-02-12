@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//cmom-technical/static/css/main.b4682877.css",
+    "main.js": "//cmom-technical/static/js/main.d181e1ac.js",
+    "static/js/787.28cb0dcd.chunk.js": "//cmom-technical/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "//cmom-technical/index.html",
+    "main.b4682877.css.map": "//cmom-technical/static/css/main.b4682877.css.map",
+    "main.d181e1ac.js.map": "//cmom-technical/static/js/main.d181e1ac.js.map",
+    "787.28cb0dcd.chunk.js.map": "//cmom-technical/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4682877.css",
+    "static/js/main.d181e1ac.js"
+  ]
+}
