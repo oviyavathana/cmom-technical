@@ -1,32 +1,47 @@
 body {
-	background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+	background: #1D1F3E;
 	color: #fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;	
 	margin-bottom: 30px;
 }
 .data-page h1 {
 	color: #61DAFB;
-	margin: 20px 20px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+		margin-top: 40px;
+	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 40px;
 }
 .data-image {
 	height: 34px;
 }
+.data-page p{
+	color: #F4F4F599;
+}
 .data-table {
 	color: #fff;
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	padding-top: 10px;
 }
+.price-alignment{
+	text-align: right;
+}
 .table {
 	color: #fff;
-	background-color: #011D2F;
+	background-color: #111228;
 	padding: 10px;
 	border-radius: 10px;
 }
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+	color: #F4F4F599;
+	background-color: #171935;
+}
+.tbody{
+	border-style: hidden;
+}
 .table>thead {
 	border-bottom: none;
+	border-style: hidden;
 }
 .modal-body>ol {
 	color: #000000;
@@ -36,31 +51,68 @@ body {
 	border-radius: 10px;
 }
 .modal-header , .modal-body {
-	background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+background-color: #1F2142;
+border-bottom: 0px;
 }
 ol {
 	color: #fff;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
 	margin-bottom: 0;
 	cursor: pointer;
 	padding: 20px;
 }
+.btn-close{
+	background-image: url('./assest/cross.png');
+}
+
 tr {
 	padding: 20px;
 	cursor: pointer;
+	border-style: none;
+	border: hidden;
+}
+.modal-content{
+	border: none;
+}
+h5{
+	color: #F4F4F599;
+	font-size: 24px;
+}
+td {
+	color: #F4F4F599;
+}
+.page-item.active .page-link{
+	background-color: transparent;
+	border-color: none;
 }
 td>ol {
 	padding-left: 0;
 }
-th {
-	color: #FAF8EF;
-	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+tr > th {
+	color: #F4F4F5;
+	font-weight: 500;
+	font-family: 'Open Sans', sans-serif;
+		font-size: 14px;
 	cursor: pointer;
+	text-transform: uppercase;
+	padding: 20px;
 }
 .price {
 	text-align: center;
+}
+.pagination.react-bootstrap-table-page-btns-ul{
+	float: right;
+
+}
+.page-link{
+	border: 1px solid #474d84;
+    background-color: #1D1F3E;
+	color: #474d84;
+}
+#pageDropDown{
+ background: #474D84;
+ border: none;
+	
 }

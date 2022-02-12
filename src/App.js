@@ -32,8 +32,8 @@ formatter: (image, data, get) => (
 </div>
 )  },
 { dataField: "name", text: "Name" },
-{ dataField: "symbol", text: "Symbol" },
-{ dataField: "current_price", text: "Current Price" },
+{ dataField: "symbol", text: "Symbol",  },
+{ dataField: "current_price", text: "Current Price", className:"price-alignment" },
 { dataField: "high_24h", text: "High 24 hour Price" },
 { dataField: "low_24h", text: "Low 24 hour Price" },
 ];
@@ -66,31 +66,44 @@ console.log(e);
 };
 return (
 <Modal show={show} onHide={handleClose}>
-   <Modal.Header closeButton></Modal.Header>
+   <Modal.Header closeButton>
+      
+   <h2>{modalData?.name}</h2>
+
+   </Modal.Header>
    <Modal.Body>
       <ul>
-         <ol>{modalData?.name}</ol>
-         <ol>{modalData?.symbol}</ol>
-         <ol>{modalData?.hashing_algorithm}</ol>
-         <ol>{modalData?.market_cap}</ol>
-         <ol>{modalData?.homepage}</ol>
-         <ol>{modalData?.genesis_date}</ol>
+         <ol>Name : {modalData?.name}</ol>
+         <ol>Symbol : {modalData?.symbol}</ol>
+         <ol>Genesis Date : {modalData?.genesis_date}</ol>
+         <ol>Hashing Algorithm : {modalData?.hashing_algorithm}</ol>
+         <ol>Market cap in Euro : {modalData?.market_cap}</ol>
+         <ol>Homepage : {modalData?.homepage}</ol>
+         <ol></ol>
       </ul>
    </Modal.Body>
+  
 </Modal>
 );
 };
 return (
 <div className="data-page">
+<div className="container">
+
    <h1>CoinGecko</h1>
-   <div className="container-fluid">
+
+  <h5>Test Objective :</h5>
+   <p>This test should take no more than 1-2 hours to complete. It would be preferable to use
+React, but vanilla JS is also acceptable. Please push your code to Github to review once
+complete with any instructions needed to run the application.</p>
       <BootstrapTable
          keyField="name"
          data={datas}
          columns={columns}
          pagination={paginationFactory()}
          rowEvents={rowEvents}
-         condensed
+         bordered={false}
+         striped
          />
    </div>
    {show ? 
